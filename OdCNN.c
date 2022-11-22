@@ -29,13 +29,13 @@ int Pool(int data[],int dl,int len,int result[]){
 int main(){
     int d[MAXL],c[MAXL],l,dl=0,cl=0;
     char ch;
-    printf("THE MAX NUMBER IS %d\ndata:",MAXL);
+    printf("THE MAX NUMBER IS %d\ndata:\n",MAXL);
     while((ch=getchar())!='\n'){    //read the data until line feed,the number is unknown.
         if(isdigit(ch)||ch=='-')    //judge the digit(including the negative digit)
             ungetc(ch,stdin);
         scanf("%d",&d[dl++]);
     }
-    printf("Cvl core:");
+    printf("Cvl core:\n");
     while((ch=getchar())!='\n'){    //read the core
         if(isdigit(ch)||ch=='-')
             ungetc(ch,stdin);
@@ -43,7 +43,7 @@ int main(){
     }    
     int t[MAXL],tl;
     tl=Cvl(d,dl,c,cl,t);
-    printf("Cvl result:");
+    printf("Cvl result:\n");
     for(int i=0;i<tl;i++)
         printf("%d ",t[i]);
     printf("\n");                   //Cvl completed
@@ -51,7 +51,7 @@ int main(){
     scanf("%d",&l);
     int r[MAXL],rl;
     rl=Pool(t,tl,l,r);
-    printf("Pool result:");
+    printf("Pool result:\n");
     for(int i=0;i<rl;i++)
         printf("%d ",r[i]);     //Pool completed
     return 0;

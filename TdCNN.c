@@ -50,32 +50,36 @@ int main(){
     int d[MAXL][MAXL]={0},c[MAXL][MAXL]={0},da[2]={0},ca[2]={0};
     printf("(THE MAX LENGTH IS %d.)\nthe width and length of the data:",MAXL);
     scanf("%d %d",&da[0],&da[1]);
-    printf("data:");
+    printf("data:\n");
     for(int i=0;i<da[0];i++)
         for(int j=0;j<da[1];j++)
             scanf("%d",&d[i][j]);
     printf("the width and length of the Cvl core:");
     scanf("%d %d",&ca[0],&ca[1]);
-    printf("Cvl core:");
+    printf("Cvl core:\n");
     for(int i=0;i<ca[0];i++)
         for(int j=0;j<ca[1];j++)
             scanf("%d",&c[i][j]);
     int t[MAXL][MAXL]={0},ta[2]={0};
     Cvl(d[0],da,c[0],ca,t[0],ta);
     printf("Cvl result:");
-    for(int i=0;i<ta[0];i++)
+    for(int i=0;i<ta[0];i++){
+        printf("\n");
         for(int j=0;j<ta[1];j++)
             printf("%d ",t[i][j]);
+    }  
     printf("\n");                       //Cvl completed
     int a[2]={0};
     printf("the width and length of the pool:");
     scanf("%d %d",&a[0],&a[1]);
     int r[MAXL][MAXL]={0},ra[2]={0};
     Pool(t[0],ta,a,r[0],ra);
-    printf("Pool result:");
-    for(int i=0;i<ra[0];i++)
+    printf("Pool result:\n");
+    for(int i=0;i<ra[0];i++){
         for(int j=0;j<ra[1];j++)
-            printf("%d ",r[i][j]);      //Pool completed
+            printf("%d ",r[i][j]);
+        printf("\n");
+    }                                   //Pool completed         
     return 0;
 }
 /*
