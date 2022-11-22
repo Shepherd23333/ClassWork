@@ -1,6 +1,6 @@
 # ClassWork
 
-## 1.OdCNN  （一维卷积与池化）
+## 1.[OdCNN  （一维卷积与池化）](https://github.com/Shepherd23333/ClassWork/blob/main/OdCNN.c)
 
 依照图示与相关资料，形成程序基本框架：
 
@@ -20,7 +20,7 @@
 
 程序实际编写时使用了qsort()及其所需的比较函数。
 
-## 2.TdCNN  （二维卷积与池化）
+## 2.[TdCNN  （二维卷积与池化）](https://github.com/Shepherd23333/ClassWork/blob/main/TdCNN.c)
 
 依照图示与相关资料，形成程序基本框架：
 
@@ -40,7 +40,7 @@
 
 程序实际编写时使用了qsort()及其所需的比较函数，使用了指针将二维数组传入函数并读取和修改数组元素。
 
-## 3.Sqrt  （平方根计算）
+## 3.[Sqrt  （平方根计算）](https://github.com/Shepherd23333/ClassWork/blob/main/Sqrt.c)
 
 基本思路：
 
@@ -50,7 +50,7 @@
 
 使用clock()等time.h下的数据类型和函数进行计算时间的统计，以及与sqrt()函数运算速度的比较。
 
-## 4.Integral  （积分计算）
+## 4.[Integral  （积分计算）](https://github.com/Shepherd23333/ClassWork/blob/main/Integral.c)
 
 基本思路：
 
@@ -58,7 +58,7 @@
 
 问题的难点在于分割点的横坐标不可直接表示，于是考虑使用类似求零点的方法来计算该值。
 
-## 5.Min  （函数最小值）
+## 5.[Min  （函数最小值）](https://github.com/Shepherd23333/ClassWork/blob/main/Min.c)
 
 从函数式分析，可能的最小值为-7，即当sin(x^2)=-1，sin x=1时取得该最小值，问题则转化为找出符合条件的x。
 
